@@ -22,7 +22,7 @@
                         <td>
                             <c:choose>
                                 <c:when test="${employee.delete_flag == 1}">
-                                    (削除済み)
+                                    （削除済み）
                                 </c:when>
                                 <c:otherwise>
                                     <a href="<c:url value='/employees/show?id=${employee.id}' />">詳細を表示</a>
@@ -48,5 +48,6 @@
             </c:forEach>
         </div>
         <p><a href="<c:url value='/employees/new' />">新規従業員の登録</a></p>
+
     </c:param>
 </c:import>
